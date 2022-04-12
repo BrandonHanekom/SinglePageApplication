@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>To-Do List</h1>
+      <form id="newTo-DoForm">
+        <input
+          type="text"
+          id="newTo-DoInput"
+          placeholder="What are your plans?"
+        />
+        <input type="submit" id="newTo-DoSubmit" value="Add To-Do" />
+      </form>
+    </header>
+
+    <main>
+      <section class="to-doList">
+        <h2>To-Do</h2>
+
+        <div id="to-do">
+           <div class="to-do">
+               <div class="content">
+            <input type="text" class="text" value="Next thing to-do" readonly />
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

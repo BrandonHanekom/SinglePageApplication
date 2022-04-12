@@ -1,0 +1,110 @@
+:root {
+    --dark: #374151
+    --darker: #1f2937
+    --darkest: #111827
+    --gray: #6b7280
+    --light: #eee
+    --pink: #ec4899
+    --purple: #8b5cf6
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background:  #374151;
+    color: #fff;
+}
+
+header {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+#newTo-DoForm {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#newTo-DoInput {
+    flex: 1 1 0%;
+    background-color:  #1f2937;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #eee;
+    font-size: 1.25rem;
+}
+
+#newTo-DoInput {
+    color: #6b7280;
+}
+
+#newTo-DoSubmit {
+    color: #ec4899;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer; 
+    transition: 0.4s;
+}
+
+#newTo-DoSubmit:hover {
+    opacity: 0.8;
+}
+
+#newTo-DoSubmit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.to-doList {
+    padding: 1rem;
+}
+
+.to-doList h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+#to-do .to-do {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #111827;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
