@@ -108,12 +108,20 @@ main {
 
 }
 
+#todo .todo .content {
+    flex: 1 1 0%
+}
+
 #todo .todo .content .text {
     color: #eee;
     font-size: 1.125rem;
     width: 100%;
     display: block;
     transition: 0.4s;
+}
+
+#todo .todo .content .text:not(:read-only) {
+    color: #ec4899;
 }
 
 #todo .todo .actions {

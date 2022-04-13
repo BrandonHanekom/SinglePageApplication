@@ -25,6 +25,7 @@ window.addEventListener('load', () => {
         todo_input_el.classList.add("text");
         todo_input_el.type = "text";
         todo_input_el.value = todo;
+        todo_input_el.setAttribute("readonly", "readonly");
 
         todo_content_el.appendChild(todo_input_el);
 
@@ -50,13 +51,17 @@ window.addEventListener('load', () => {
 
         todo_edit_el.addEventListener('click', () => {
             if (todo_edit_el.innerText.toLowerCase() == "edit") {
-                todo_input_el.removeAttribute;
+                todo_input_el.removeAttribute("readonly");
                 todo_input_el.focus();
                 todo_edit_el.innerText = "Save";
             } else {
-                todo_input_el.setAttribute
+                todo_input_el.setAttribute("readonly", "readonly")
                 todo_edit_el.innerText = "Edit"
-            }
+            } 
+        })
+
+        todo_delete_el.addEventListener ('click', () => {
+            list_el.removeChild(todo_el);
         })
     })
 })
