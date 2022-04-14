@@ -39,7 +39,7 @@ input, button {
 
 #newToDoInput {
     flex: 1 1 0%;
-    background-color:  #1f2937;
+    background-color:  #111827;
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -145,3 +145,13 @@ main {
 .todo .actions .delete {
     color: #00e54b
 }
+
+img {
+    width: 50px;
+    height: 50px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #1f2937;
+    }
+  }
